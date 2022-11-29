@@ -175,7 +175,15 @@
 				>
 			</File>
 			<File
+				RelativePath=".\gra.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\inz.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\kredyt.cpp"
 				>
 			</File>
 			<File
@@ -192,6 +200,10 @@
 			</File>
 			<File
 				RelativePath=".\pracownik.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\RNG.cpp"
 				>
 			</File>
 			<File
@@ -215,7 +227,15 @@
 				>
 			</File>
 			<File
+				RelativePath=".\gra.h"
+				>
+			</File>
+			<File
 				RelativePath=".\inz.h"
+				>
+			</File>
+			<File
+				RelativePath=".\kredyt.h"
 				>
 			</File>
 			<File
@@ -228,6 +248,10 @@
 			</File>
 			<File
 				RelativePath=".\pracownik.h"
+				>
+			</File>
+			<File
+				RelativePath=".\RNG.h"
 				>
 			</File>
 			<File
