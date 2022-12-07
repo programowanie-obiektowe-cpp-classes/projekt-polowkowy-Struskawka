@@ -13,6 +13,7 @@ class mag : public pracownik{
 		bool	getce_mag() { return ce_mag; }
 		virtual int		wyn()	{return wyn_mag;}
 		virtual void drukuj()	{cout<<" mag "<<imie<<"   wynagrodzenie "<<wyn_mag<<"   wozek ";if(ce_mag==false)cout<<"nie"<<endl; else cout<<"tak"<<endl;}
+		virtual int getco(){return 3;} //CMag//poprawione//
 
 
     private:

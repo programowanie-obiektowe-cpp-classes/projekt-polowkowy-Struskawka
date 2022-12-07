@@ -13,6 +13,7 @@ class inz : public pracownik{
 		string	getce_inz() { return ce_inz; }
 		virtual int		wyn()	{return wyn_inz;}
 		virtual void drukuj()	{cout<<" inz "<<imie<<"   wynagrodzenie "<<wyn_inz<<"   wydzial "<<ce_inz<<endl;}
+		virtual int getco(){return 2;} //CI//poprawione//
 
 
 

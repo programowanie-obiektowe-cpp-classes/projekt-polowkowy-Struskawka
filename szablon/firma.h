@@ -36,12 +36,12 @@ class firma {
 
 //oblicz_przych
 		double oblicz_przych(){
-			int licz_prod=n_rob*prac_tab[0]->getcorob();		cout<<" teor_licz_prod---"<<licz_prod<<endl;
-			int poj_mag=n_mag*prac_tab[0]->getcomag();			cout<<" poj_mag----------"<<poj_mag<<endl;
+			int licz_prod=n_rob*prac_tab[3]->getco();			cout<<" teor_licz_prod---"<<licz_prod<<endl;
+			int poj_mag=n_mag*prac_tab[1]->getco();				cout<<" poj_mag----------"<<poj_mag<<endl;
 			if(poj_mag<licz_prod)licz_prod=poj_mag;				cout<<" licz_prod--------"<<licz_prod<<endl;
-			int popyt=n_mkt*prac_tab[0]->getcomkt();			cout<<" popyt------------"<<popyt<<endl;
+			int popyt=n_mkt*prac_tab[2]->getco();				cout<<" popyt------------"<<popyt<<endl;
 			if(licz_prod>popyt)licz_prod=popyt;					cout<<" licz_sprzed_prod-"<<licz_prod<<endl;
-			int cena=n_inz*prac_tab[0]->getcoinz();				cout<<" cena-------------"<<cena<<endl;
+			int cena=n_inz*prac_tab[0]->getco();				cout<<" cena-------------"<<cena<<endl;
 			                                                    cout<<" przychod---------"<<cena*licz_prod<<endl;
 			return cena*licz_prod;}
 //-----------------------------------------------------------------------------------------------------------------------------
@@ -86,11 +86,16 @@ class firma {
 //wartosc_firmy
 		void policz_wartosc_firmy(){double suma=0;for(int i=0;i<historia;i++)suma=suma+his_przych[i];wartosc_firmy=suma/historia;}
 		double	getwartosc_firmy() { policz_wartosc_firmy(); return wartosc_firmy; }
+//-----------------------------------------------------------------------------------------------------------------------------
+//czyszczenie na koniec
+		void wyczysc_koniec(){			for(int i=0; i<max_kred; i++){if(dost_kred[i]==1){delete kred_tab[i];}}
+										for(int i=0; i<n_prac; i++){delete prac_tab[i];}
+										}//poprawione//
+										
 		
 	
 
-	friend class pracownik;
-	friend class kredyt;
+	//poprawione//
     private:
 	double stan_konta;
 

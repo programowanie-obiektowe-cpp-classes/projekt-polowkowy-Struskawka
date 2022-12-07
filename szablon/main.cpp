@@ -9,7 +9,9 @@ using namespace std;
 int main()
 {
 
-	new gra();
+	gra *g = new gra();
+	g->graj();
+	delete g;//poprawione//
 
 
 system("pause")	;

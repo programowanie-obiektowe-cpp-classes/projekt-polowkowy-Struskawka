@@ -13,6 +13,7 @@ class rob : public pracownik{
 		double	getce_rob() { return ce_rob; }
 		virtual int		wyn()	{return wyn_rob;}
 		virtual void drukuj()	{cout<<" rob "<<imie<<"   wynagrodzenie "<<wyn_rob<<"   but " <<ce_rob<<endl;}
+		virtual int getco(){return 5;} //CR//poprawione//
 		
 
     private:

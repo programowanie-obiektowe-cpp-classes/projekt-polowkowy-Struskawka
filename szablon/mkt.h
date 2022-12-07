@@ -13,6 +13,7 @@ class mkt : public pracownik{
 		int	getce_mkt() { return ce_mkt; }
 		virtual int		wyn()	{return wyn_mkt;}
 		virtual void drukuj()	{cout<<" mkt "<<imie<<"   wynagrodzenie "<<wyn_mkt<<"   obserwujacy " <<ce_mkt<<endl;}
+		virtual int getco(){return 4;} //CMkt//poprawione//
 
 
     private:
